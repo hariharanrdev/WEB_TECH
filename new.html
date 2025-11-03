@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="user_name">Name:</label>
+      <input type="text" name="empName" value="Komaganthi" id="user_name"> <br> <br>
+
+      <label for="user_email">Email:</label>
+      <input type="email" value="abc@gmail.com" id="user_email"> <br> <br>
+
+      <label for="user_age">Age:</label>
+      <input type="number" value="20" id="user_age"> <br> <br>
+
+      <label for="user_mobileNo">Mobile No:</label>
+      <input type="tel" value="9036115699" id="user_mobileNo"> <br> <br>
+
+      <label for="user_password">Password:</label>
+      <input type="password" id="user_password"> <br> <br>
+
+      <label for="user_confirm_password">Confirm Password:</label>
+      <input type="password" id="user_confirm_password"> <br> <br>
+
+      <label for="user_gender">Gender:</label>
+      <input type="radio" name="userGender" value="male"> Male
+      <input type="radio" name="userGender" value="female"> Female
+      <input type="radio" name="userGender" value="others"> Others
+      <br> <br>
+
+      <label for="user_skills">Skills:</label>
+      <br>
+      <input type="checkbox" name="userSkills" value="HTML"> HTML <br>
+      <input type="checkbox" name="userSkills" value="CSS"> CSS <br>
+      <input type="checkbox" name="userSkills" value="JavaScript"> JavaScript <br>
+      <input type="checkbox" name="userSkills" value="React JS"> React JS <br>
+      <input type="checkbox" name="userSkills" value="Python"> Python <br>
+      <input type="checkbox" name="userSkills" value="SQL"> SQL <br> <br>
+
+      <legend>Address Details</legend>
+      <label for="state">State:</label>
+      <select name="userState" id="state">
+        <option value="tn" selected>Tamilnadu</option>
+        <!-- If we don't pass value attribute, it will treat content as default value else it will treat value as a default value. -->
+        <option value="kl">Kerala</option>
+        <option value="ka">Karnataka</option>
+        <option value="ap">Andhra Pradesh</option>
+        <option value="up">Uttar Pradesh</option>
+        <option value="mp">Madhya Pradesh</option>
+        <option value="jh">Jharkhand</option>
+        <option value="mh">Maharashtra</option>
+        <option value="goa">Goa</option>
+        <option value="br">Bihar</option>
+      </select> <br> <br>
+
+      <label for="district">District:</label>
+      <select name="userDistrict" id="district">
+        <option value="">--Select--</option>
+        <option>Karur</option>
+        <option>Chennai</option>
+        <option>Coimbatore</option>
+        <option>Madurai</option>
+        <option>Thanjavur</option>
+        <option>Tirunelveli</option>
+        <option>Namakkal</option>
+        <option>Karur</option>
+      </select> <br> <br>
+
+      <label for="stateList">State List:</label>
+      <input list="stateList">
+      <datalist id="stateList">
+        <option value="Tamilnadu">
+        <option value="Kerala">
+        <option value="Karnataka">
+        <option value="Andhra Pradesh">
+        <option value="Madhya Pradesh">
+        <option value="Jharkhand">
+        <option value="Uttar Pradesh">
+        <option value="Maharashtra">
+        <option value="Goa">
+        <option value="Bihar">
+      </datalist> <br> <br>
+
+      <label for="districtList">District:</label>
+      <input list="districtList">
+      <datalist id="districtList">
+        <option>Karur</option>
+        <option>Chennai</option>
+        <option>Coimbatore</option>
+        <option>Madurai</option>
+        <option>Thanjavur</option>
+        <option>Tirunelveli</option>
+        <option>Namakkal</option>
+        <option>Kanyakumari</option>
+      </datalist> <br> <br>
+
+      <label for="user_courses">Courses:</label>
+      <select>
+        <optgroup label="Arts">
+          <option>History</option>
+          <option>Economics</option>
+          <option>Political Science</option>
+          <option>English</option>
+        </optgroup>
+        <optgroup label="Science">
+          <option>Physics</option>
+          <option>Chemistry</option>
+          <option>Mathematics</option>
+          <option>Biology</option>
+        </optgroup>
+        <optgroup label="Commerce">
+          <option>Accounting</option>
+          <option>Finance</option>
+          <option>Banking</option>
+          <option>Economics</option>
+        </optgroup>
+      </select> <br> <br>
+
+      <label for="skillsList">Skills:</label>
+      <select name="id">
+        <optgroup label="Frontend">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
+        </optgroup>
+        <optgroup label="Database">
+          <option>SQL</option>
+          <option>MongoDB</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option>Java</option>
+          <option>Python</option>
+        </optgroup>
+        <optgroup label="Framework/Libraries">
+          <option>React JS</option>
+          <option>Angular</option>
+          <option>Django</option>
+          <option>Spring Boot</option>
+        </optgroup>
+      </select> <br> <br>
+
+      <label for="feedback">Feedback:</label>
+      <textarea name="id" rows="20" cols="80"></textarea> <br> <br>
+    </fieldset>
+
+    <button type="button">Simple Button</button>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+    <!-- 
+      Button:
+      - It will not have any features on purpose.
+
+      Reset:
+      - It will just clear the data.
+      - It will not refresh the page.
+
+      Submit:
+      - It will submit the data.
+      - It will refresh the page.
+    -->
+  </form>
+</body>
+</html>
