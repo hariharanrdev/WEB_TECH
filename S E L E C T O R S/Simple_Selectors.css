@@ -15,3 +15,13 @@ b{
 }
 
 /* !Grouping */
+
+/* !Class name */
+.demo3{
+    color: white;
+    background-color: purple;
+}
+.demo4{
+    color: white;
+    background-color: green;
+}
