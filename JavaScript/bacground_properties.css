@@ -1,0 +1,24 @@
+section{
+    height: 1920px;
+    width: 1080PX;
+    background-color: aliceblue;
+    /* border: solid; */
+
+    background-image: url(https://i.pinimg.com/736x/e6/e6/ba/e6e6ba3fa014126e8bd64f867a20da07.jpg);
+    
+    /* background-repeat: repeat-x; */
+
+    background-repeat: no-repeat;
+
+
+    /* background-repeat: repeat-y; */
+
+    /* background-position-x: left; */
+
+    /* background-position-x: right; */
+
+    /* background-position-y: right; */
+
+    background-position: center;
+
+}
