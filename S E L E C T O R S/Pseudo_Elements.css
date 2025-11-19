@@ -1,1 +1,13 @@
-C
+/* CHESS */
+table tr:nth-child(even) td:nth-child(even){
+    background-color: chocolate;
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color: bisque;
+}
+table tr:nth-child(odd) td:nth-child(odd){
+    background-color: chocolate;
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color: bisque;
+}
