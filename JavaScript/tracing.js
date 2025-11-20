@@ -1,3 +1,5 @@
+console.log("start")
+
 var a = 10;
 console.log(a);
 
@@ -12,3 +14,5 @@ console.log(d);
 
 var address = "Coimbatore";
 conslog.log(address);
+
+console.log("end")
