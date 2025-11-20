@@ -13,6 +13,6 @@ var d;
 console.log(d);
 
 var address = "Coimbatore";
-conslog.log(address);
+console.log(address);
 
 console.log("end")
