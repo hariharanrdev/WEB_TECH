@@ -1,0 +1,27 @@
+h1{
+    border: 5px;
+    border-color: blue;
+    border-width: 20px;
+    border-style: groove;
+
+}
+
+#box {
+    height: 400px;
+    width: 400px;
+
+    border-width: 50px;
+    
+    border:20px groove red;
+
+    border-left: 15px dashed black;
+    border-right: 15px double green;
+    border-top: 15px dashed blue;
+    border-bottom: 15px dashed violet;
+
+}
+
+#box2 {
+    border: 20px dashed yellowgreen;
+    border-radius: 20px;
+}
