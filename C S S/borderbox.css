@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    border: 15px solid blue;
+    height: 200px;
+    width: 800px;
+    margin: 0px;
+    padding: 15px;
+} 
+
+section{
+    width: 2000px;
+    background-color: teal;
+    color: white;
+}
+section div{
+    border: 10px solid red;
+    height: 50px;
+    width: 100px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+section div:hover{
+    background-color: lightgrey;
+    color: green;
+}
+
+/* box-sizing:border-box;
+box-sizing: content-box; */
