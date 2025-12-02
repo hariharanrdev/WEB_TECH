@@ -1,0 +1,22 @@
+img[alt='bgone']{
+    height:500px;
+}
+
+img[alt='bgtwo']{
+    height:700px;
+
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 5;
+}
+
+img[alt='lordganesh']{
+    height: 700px;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    z-index: 10;
+}
+
+

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: teal;
+    color: white;
+    margin-top: 0px;
+}
+
+section div{
+    display: inline-block;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+
+section div :hover{
+    background-color: aquamarine;
+}

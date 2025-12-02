@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h1 {
+    height: 100px;
+    width: 100%;
+}
+
+b,
+i,
+u {
+    height: 100px;
+    width: 100%;
+
+}
+
+h1{
+    dispplay: inline;
+}
+
+b{
+    display: block;
+}
+
+u{
+    display: inline-block;
+}
