@@ -12,7 +12,9 @@
 
     display: flex;
 
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    /*! justify-content values:start,end, space-evenly, space-between, space-around */
     
     align-items: end;
 }
@@ -20,7 +22,7 @@
 #container div {
     height: 100px;
     width: 100px;
-    border: solid black;
+    border: solid black;i
     background-color: chocolate;
     color: white;
     
