@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 500px;
+    width: 800px;
+    border: solid red;
+    display: flex;
+    background-color: bisque;
+}
+
+section div {
+    height: 100px;
+    /* flex-basis: 200px; */
+    background-color: lightblue;
+    border: solid black;
+}
+
+section div:nth-child(1) {
+    flex-grow: 1;
+    flex-shrink:1;
+}
+section div:nth-child(2) {
+    flex-grow: 1;
+}
+section div:nth-child(3) {
+    flex-grow: 1;
+}
