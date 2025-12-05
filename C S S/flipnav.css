@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#p1 {
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: -1000px;
+}
