@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 500px;
+    width: 800px;
+    border: solid red;
+    display: grid;
+    grid-template-columns: 200px 150px 120px 160px;
+    grid-template-rows: 100px 150px 120px;
+    gap: 10px;
+}
+
+section div {
+    border: solid blue;
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
