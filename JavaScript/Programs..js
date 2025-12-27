@@ -40,13 +40,13 @@ console.log(mul);
 
 //! Programs of strings
 
-//? palindrome or reverse a string
+//? palindrome or reverse a string - comprehensive way!.
 let s = "javascript";
 let res = s.split("").reverse().join("");
 console.log(res);  
 
 //? palindrome or reverse a string using array methods
-
+/*
 let s = "javascript";
 let ar = s.split("");
 console.log(ar);
@@ -62,5 +62,5 @@ if (s == rev) {
 } else {
   console.log("not palindrome");
 }
-
+*/
 //! Programs of Arrays
