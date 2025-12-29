@@ -41,10 +41,11 @@ console.log(mul);
 //! Programs of strings
 
 //? palindrome or reverse a string - comprehensive way!.
+/*
 let s = "javascript";
 let res = s.split("").reverse().join("");
 console.log(res);  
-
+*/
 //? palindrome or reverse a string using array methods
 /*
 let s = "javascript";
@@ -63,4 +64,25 @@ if (s == rev) {
   console.log("not palindrome");
 }
 */
+
+let s = "I love you chellam";
+let res = "";
+
+for(let char of s){
+  if (char == "") {
+    res = res + "@";
+  } else {
+    res  = res + char;
+  }
+}
+console.log(res);
+
+
+let s = "I love you chellam";
+let res = s.replaceAll(" ","@");
+console.log(res);
+
+let s = "I love you chellam";
+let res = "";
+
 //! Programs of Arrays
