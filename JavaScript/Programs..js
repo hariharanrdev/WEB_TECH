@@ -142,5 +142,4 @@ for (let num of ar2)
 }
 console.log("unique array:", unique);
 
-
 //! Programs of Objects
