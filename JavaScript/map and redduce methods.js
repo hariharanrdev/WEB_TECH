@@ -1,6 +1,6 @@
 let salaries = [100, 150, 260, 120, 850, 420, 130];
 console.log(salaries);
-}
+
 
 // ? Without Map
 let newSalaries = [];
@@ -44,8 +44,9 @@ for (let i = 0; i < thamuCrushCount.length; i++) {
 sum += thamuCrushCount[i];
 
 console.log(sum);
+}
 
-// container - sum
+//  container - sum
 // iterator - i
 // SingleValue
 
@@ -59,7 +60,7 @@ console.log(sum);
 
 console. log(thamuCrushCount); // [2, 7, 61, 22, 9]
 
-// ~ Case 1: using Named Function:
+//  Case 1: using Named Function:
 function getCount(sum, i) {
 console.log(sum, i);
 
@@ -83,6 +84,5 @@ console.log(
 console.log(MadhanMarks.reduce((sum, i)=> sum+i, 10));
 
 // ? Example 3:
-let ar = ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"];
-
-console.log(ar.reduce((str, i) =>str+i));
+let ar = ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t" ];
+console.log(ar.reduce((str, i) => str +i));
