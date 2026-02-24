@@ -80,6 +80,9 @@ const App = () => {
 export default App;
 */
 
+//? counter components
+
+/*
 import React,{Component} from 'react'
 class  APP extends Component{
   constructor(){
@@ -114,4 +117,48 @@ class  APP extends Component{
 }
 
 
-export default APP
+export default APP;
+*/
+
+//? react life cycle Components
+//mounting
+//updating
+//unmounting
+
+
+import React, { Component } from 'react'
+
+class App extends Component {
+  constructor() {
+    console.log("I am Constructor method ()")
+    super();
+    this.state ={
+      counter:0,
+    };
+  }
+  static getDerivedStateFromProps(props, state) {
+    console.log("I am getDerivedStateFromProps method ()", props, state);
+    return {counter:50};
+  }
+  componentDidMount() {
+    console.log("I am componentDidMount method ()");
+    let getData = async () => {
+      let response = await fetch("https://fakestoreapi.com/users");
+      let data = await response.json();
+      console.log(data);
+    };
+    getData();
+  }
+  render() {
+    console.log("I am render () method")
+    return (
+      <>
+      <h1>I am App Component</h1>
+      <h2>Counter : {this.state.counter}</h2>
+      <button onClick={()=> this.setState({counter: this.state.counter+1})}>Update</button>
+      </>
+    )
+  }
+}
+ 
+export default App;
