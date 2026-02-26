@@ -167,7 +167,7 @@ export default App;
 //! Unmounting Phase
 
 import React, { Component } from 'react';
-import ChildComponentA; from './ChildComponentA';
+import ChildComponentA from './ChildComponentA';
 
 class App extends Component {
   constructor(){
@@ -180,7 +180,7 @@ class App extends Component {
     return (
       <>
       <h1>I am Appp component</h1>
-      <button onClick={()=> this.setState({display: !this.state.display})}></button>
+      <button onClick={()=> this.setState({display: !this.state.display})}>{this.state.display?"Unmount" : "Mount" }</button>
       {this.state.display && <ChildComponentA/>}
       </>
     );
