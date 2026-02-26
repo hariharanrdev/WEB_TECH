@@ -125,7 +125,7 @@ export default APP;
 //updating
 //unmounting
 
-
+/*
 import React, { Component } from 'react'
 
 class App extends Component {
@@ -161,4 +161,29 @@ class App extends Component {
   }
 }
  
+export default App;
+*/
+
+//! Unmounting Phase
+
+import React, { Component } from 'react';
+import ChildComponentA; from './ChildComponentA';
+
+class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      display:true,
+    };
+  }
+  render() {
+    return (
+      <>
+      <h1>I am Appp component</h1>
+      <button onClick={()=> this.setState({display: !this.state.display})}></button>
+      {this.state.display && <ChildComponentA/>}
+      </>
+    );
+  }
+}
 export default App;

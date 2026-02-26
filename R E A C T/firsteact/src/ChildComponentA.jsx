@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import Hoc from "./Hoc";
 
@@ -16,3 +17,23 @@ const ChildComponentA = (props) => {
 };
 
 export default Hoc(ChildComponentA);
+*/
+
+//!unmounting.
+
+import React, { Component } from 'react'
+
+class ChildComponentA extends Component {
+  componentWillUnmount(){
+    console.log("I am unmounting...");
+  }
+  render() {
+    console.log("I am Mounting");
+    return (
+      <>
+      <h2>I am Child Component</h2>
+      </>      
+    );
+  }
+}
+export default ChildComponentA;
