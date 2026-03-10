@@ -164,6 +164,8 @@ class App extends Component {
 export default App;
 */
 
+
+/*
 //! Unmounting Phase
 
 import React, { Component } from 'react';
@@ -186,4 +188,41 @@ class App extends Component {
     );
   }
 }
+export default App;
+*/
+
+import React,{useEffect, useState} from "react";
+import ChildComponentA from "./ChildComponentA";
+
+let App = () => {
+  let [products, setProducts] = useState([]);
+  let [counter1, setCounter1] = useState(0);
+  let [counter2, setCounter2] = useState(0);
+  let [counter3, setCounter3] = useState(0);
+  let [display,setDisplay] = usestate(true);
+
+  let getdata = async() =>{
+    let res = await fetch("https://api.escuelajs.co/api/v1/products");
+    let data = await res.json();
+    setProducts(data);
+  };
+
+  return(
+    <>
+    <h1>I am useeffect() Hook</h1>
+    <h2>Counter 1: {counter1}</h2>
+    <button onClick={()=> setCounter1(counter1 + 1)}>Update</button>
+    <h2>Counter 2: {counter2}</h2>
+    <button onClick={()=> setCounter2(counter2 + 1)}>Update</button>
+    <h2>Counter 3: {counter3}</h2>
+    <button onClick={()=> setCounter3(counter3 + 1)}>Update</button>
+
+    <hr />
+
+    <button onClick={()=> setDisplay(!display)}>{display ? "Unmount" : "Mount"}</button>
+    {display && <ChildComponentA/>}
+
+    </>
+  );
+};
 export default App;

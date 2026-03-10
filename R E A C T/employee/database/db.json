@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": "101",
+      "ename": "Arun",
+      "email": "sarun101202@gmail.com",
+      "designation": "Full Stack Developer"
+    },
+    {
+      "id": "102",
+      "ename": "Sibi",
+      "email": "Sibi@gmail.com",
+      "designation": "Analyst"
+    },
+    {
+      "id": "104",
+      "ename": "Hari",
+      "email": "Hari@gmail.com",
+      "designation": "Senior Developer"
+    },
+    {
+      "id": "105",
+      "ename": "Karan",
+      "email": "Karan@gmail.com",
+      "designation": "App Developer"
+    }
+    
+  ]
+}

@@ -19,6 +19,8 @@ const ChildComponentA = (props) => {
 export default Hoc(ChildComponentA);
 */
 
+/*
+
 //!unmounting.
 
 import React, { Component } from 'react'
@@ -37,3 +39,16 @@ class ChildComponentA extends Component {
   }
 }
 export default ChildComponentA;
+*/
+
+// ! useEfect () Hook
+
+import {useEffect} from "react";
+let ChildComponent = () => {
+  useEffect(()=>{
+    console.log("I am Mounting Phase");
+    return ()=> {
+      console.log(I am unmounting phaase);
+    };
+  })
+}
